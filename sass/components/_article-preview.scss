@@ -41,6 +41,7 @@ html {
   &__person {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   &__person h2 {
@@ -51,12 +52,11 @@ html {
   &__person img:nth-child(3) {
     width: 20px;
     height: 20px;
-    position: absolute;
-    right: 100%;
   }
 
   &__person div:nth-child(2) {
-    padding: 0 20px;
+    padding: 0 90px;
+    position: fixed;
   }
 }
 
