@@ -10,18 +10,25 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Article preview component</title>
   </head>
   <body>
-    <main>
-      <article class="container">
-        <section>
+    <main class="general-content">
+      <article class="main-content">
+        <section class="image-container">
           <img
             src="images/article-preview/drawers.jpg"
             alt="Animalist furniture"
           />
         </section>
-        <section>
+        <section class="presentation">
           <div>
             <h1>
               Shift the overall look and feel by adding these wonderful touches
@@ -33,8 +40,9 @@
               help you make any room feel complete.
             </p>
           </div>
-          <div>
+          <div class="presentation__person">
             <img
+              class="presentation__image"
               src="images/article-preview/avatar-michelle.jpg"
               alt="Avatar of a woman"
             />
