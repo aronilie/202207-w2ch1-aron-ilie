@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "sass-c": "npx sass sass/styles.scss css/styles.css --watch"
+    "sass-c": "npx sass sass/styles.scss css/styles.css",
+    "sass-compiler": "npx sass sass/styles.scss css/styles.css --watch"
   },
   "keywords": [],
   "author": "",
