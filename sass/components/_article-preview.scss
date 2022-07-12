@@ -20,6 +20,7 @@ html {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+  transition: 1s;
 }
 
 .image-container {
@@ -41,6 +42,7 @@ html {
   &__person {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   &__person h2 {
@@ -48,15 +50,14 @@ html {
     font-size: 20px;
   }
 
-  &__person img:nth-child(3) {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    right: 100%;
+  &__person div:nth-child(2) {
+    padding: 0 90px;
+    position: fixed;
   }
 
-  &__person div:nth-child(2) {
-    padding: 0 20px;
+  &__person--icon {
+    width: 20px;
+    height: 20px;
   }
 }
 
