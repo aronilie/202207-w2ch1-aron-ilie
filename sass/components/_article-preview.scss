@@ -83,13 +83,17 @@ h2 {
     }
   }
 
-  &__person--icon {
+  &__person--icon > img {
     width: 20px;
     height: 20px;
 
     @media (max-width: 700px) {
       filter: brightness(10);
     }
+  }
+
+  &__person--icon:hover > img {
+    filter: brightness(10);
   }
 }
 
