@@ -4,6 +4,10 @@ html {
   font-family: Manrope, Arial, Helvetica, sans-serif;
 }
 
+h2 {
+  font-weight: 700;
+}
+
 .general-content {
   width: 100vw;
   height: 100vh;
@@ -16,11 +20,16 @@ html {
 .main-content {
   width: 1000px;
   background-color: #fff;
+  margin: 80px;
   display: flex;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
   transition: 1s;
+
+  @media (max-width: 700px) {
+    display: block;
+  }
 }
 
 .image-container {
@@ -33,6 +42,10 @@ html {
   color: #505050;
   padding: 40px;
 
+  @media (max-width: 700px) {
+    padding: 0;
+  }
+
   &__image {
     width: 60px;
     height: 60px;
@@ -43,21 +56,38 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
 
+    @media (max-width: 700px) {
+      background-color: #414141;
+    }
+  }
   &__person h2 {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 20px;
+
+    @media (max-width: 700px) {
+      display: none;
+    }
   }
 
   &__person div:nth-child(2) {
     padding: 0 90px;
     position: fixed;
+
+    @media (max-width: 700px) {
+      display: none;
+    }
   }
 
   &__person--icon {
     width: 20px;
     height: 20px;
+  }
+}
+
+.presentation > div {
+  @media (max-width: 700px) {
+    padding: 40px;
   }
 }
 
